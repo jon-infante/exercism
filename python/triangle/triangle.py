@@ -4,7 +4,7 @@ def equilateral(sides):
     # Checking if all numbers are integers
     for i in sides:
         if float(i) != i:
-            raise Exception("Numbers are not integers")
+            raise Exception("Inputs are not numbers")
     tri_set = set()
     for i, num in enumerate(sides):
         if sides[int(i)] > 0:
@@ -17,7 +17,7 @@ def isosceles(sides):
     # Checking for if all numbers are integers
     for i in sides:
         if float(i) != i:
-            raise Exception("Numbers are not integers")
+            raise Exception("Inputs are not numbers")
     tri_set = set()
     sides = sorted(sides)
     if sides[0] + sides[1] < sides[2]:
@@ -32,7 +32,7 @@ def scalene(sides):
     # Checking for if all numbers are integers
     for i in sides:
         if float(i) != i:
-            raise Exception("Numbers are not integers")
+            raise Exception("Inputs are not numbers")
     tri_set = set()
     sides = sorted(sides)
     if sides[0] + sides[1] < sides[2]:
