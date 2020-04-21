@@ -1,4 +1,8 @@
 def primes(limit):
+
+    if int(limit) != limit:
+        raise Exception("Meaningful message indicating the source of the error")
+
     prime = [2]
 
     if limit == 1:

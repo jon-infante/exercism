@@ -192,6 +192,14 @@ class SieveTest(unittest.TestCase):
                 997,
             ],
         )
+    # Bad test cases
+    def test_invalid_case2(self):
+        self.assertRaises(Exception, primes, '10dbad')
+
+    def test_invalid_case(self):
+        self.assertRaises(Exception, primes, 'nt')
+
+
 
 
 if __name__ == "__main__":
